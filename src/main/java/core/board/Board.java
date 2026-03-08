@@ -33,7 +33,7 @@ public class Board {
         return this.positions[index.value].getPiece() == null;
     }
 
-    public boolean hasMatchingHorizontally() {
+    public boolean hasMatchedHorizontally() {
         return (
                 pieceAt(FIRST) != null
                         && Objects.equals(pieceAt(FIRST), pieceAt(SECOND))
@@ -49,7 +49,7 @@ public class Board {
         );
     }
 
-    public boolean hasMatchingVertically() {
+    public boolean hasMatchedVertically() {
         return (
                 pieceAt(FIRST) != null
                         && Objects.equals(pieceAt(FIRST), pieceAt(FORTH))
@@ -65,7 +65,7 @@ public class Board {
         );
     }
 
-    public boolean hasMatchingDiagonally() {
+    public boolean hasMatchedDiagonally() {
         return (
                 pieceAt(FIRST) != null
                         && Objects.equals(pieceAt(FIRST), pieceAt(FIFTH))

@@ -64,9 +64,9 @@ public class Game {
     }
 
     private void validateGameConditions() {
-        if (board.hasMatchingHorizontally()
-                || board.hasMatchingVertically()
-                || board.hasMatchingDiagonally()) {
+        if (board.hasMatchedHorizontally()
+                || board.hasMatchedVertically()
+                || board.hasMatchedDiagonally()) {
             winGame();
         }else if (round == 10) {
             gameOver();
